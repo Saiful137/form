@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form</title>
+		<meta charset="utf-8"/>
+		<style>
+			  h1 {
+				  margin-top: 0;
+			  }
+
+			  form {
+				  margin: 0 auto;
+				  padding: 1em;
+				  border: 1px solid #CCC;
+				  border-radius: 1em;
+			  }
+
+			  div+div {
+				  margin-top: 1em;
+			  }
+
+			  label{
+				  display: inline-block;
+			  }
+
+			  input, textarea {
+				  width: 250px;
+				  box-sizing: border-box;
+				  border: 1px solid #999;
+			  }
+
+			  input:focus, textarea:focus {
+				  border-color: #000;
+			  }
+
+			  textarea {
+				  vertical-align: top;
+				  height: 5em;
+			  }
+
+			  button {
+				  margin: 20px 0 0 24px;
+			  }
+
+		</style>
+	</head>
+
+	<body>
+		<form>
+		        <h1>Student Registration Form</h1>
+		        <div>
+		            <fieldset>
+		              <legend>Title</legend>
+
+		                  <input type="radio" id="mister" value="Mister" >
+		                  <label for="mister" for="mister">Mister</label>
+
+		                  <input type="radio" id="miss" value="Miss">
+		                  <label for="miss">Miss</label>
+
+		            </fieldset>
+				</div>
+				
+				<div>
+		              <label for="name">Name: </label>
+		              <input type="text" id="name" max="30"><br/>
+
+		              <label for="dept">Department: </label>
+		              <select id="dept">
+		                <option value="CSE">CSE</option>
+		                <option value="EEE">EEE</option>
+		                <option value="BBA">BBA</option>
+		              </select>	<br/>	
+
+		              <label for="mail">E-mail: </label>
+		              <input type="email" id="mail"><br/>
+		
+		              <label for="roll">Roll No: </label>
+		              <input type="email" id="roll" pattern="057[0-9]{5}"><br/>
+
+		              <label for="password">Password:  </label>
+		              <input type="password" id="password"></br>		     
+
+		        </div>
+		        <div>
+		           <button type="submit">Submit</button>
+		        </div>
+		 </form>
+
+	</body>
+
+</html>
